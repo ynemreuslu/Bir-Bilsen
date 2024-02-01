@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuizApp" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/base</item>
+        <item name="android:background">@color/base</item>
+
+    </style>
+
+
+    <style name="Theme.App.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/base</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/icon_logo</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.QuizApp</item>
+    </style>
+
+
+    <style name="Theme.QuizApp" parent="Base.Theme.QuizApp"/>
+
+
+
+</resources>
