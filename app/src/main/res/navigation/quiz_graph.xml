@@ -23,29 +23,19 @@
         android:id="@+id/play"
         android:name="com.example.quizapp.screen.play.Play"
         android:label="fragment_play"
-        tools:layout="@layout/fragment_play" >
-        <action
-            android:id="@+id/action_play_to_networkController"
-            app:destination="@id/networkController" />
-    </fragment>
+        tools:layout="@layout/fragment_play" />
     <fragment
         android:id="@+id/settings"
         android:name="com.example.quizapp.screen.settings.Settings"
         android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" >
-        <action
-            android:id="@+id/action_settings_to_networkController"
-            app:destination="@id/networkController" />
-    </fragment>
+        tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/networkController"
-        android:name="com.example.quizapp.screen.network.NetworkController"
+        android:name="com.example.quizapp.network.NetworkController"
         android:label="fragment_network_controller"
         tools:layout="@layout/fragment_network_controller" >
         <action
             android:id="@+id/action_networkController_to_entry"
-            app:destination="@id/entry"
-            app:popUpTo="@id/quiz_graph"
-            app:popUpToInclusive="true" />
+            app:destination="@id/entry" />
     </fragment>
 </navigation>

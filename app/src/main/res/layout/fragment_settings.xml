@@ -13,47 +13,37 @@
         android:layout_marginTop="16dp"
         android:text="@string/settings"
         android:textColor="#F8F8F8"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/settingsRemoveAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="121dp"
-        android:text="@string/remove_ads"
-        android:textColor="#F5F5F5"
-        android:textSize="16sp"
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/settingsVoice"
+        style="@style/Widget.App.Switch"
+        android:layout_width="295dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/voice"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/settingsShare"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settingsText" />
-
-    <Switch
-        android:id="@+id/settingsVoice"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="@string/voice"
-        android:textColor="#FBFBFB"
-        android:textSize="16sp"
-        android:trackTint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/settingsShare"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settingsRemoveAdd"
+        app:layout_constraintTop_toBottomOf="@+id/settingsText"
         app:layout_constraintVertical_bias="0.5" />
 
-    <TextView
+    <Button
         android:id="@+id/settingsShare"
+        style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/share"
+        android:background="#F5F5F5"
         android:textColor="#F8F7F7"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/settingsPoint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -61,17 +51,19 @@
         app:layout_constraintTop_toBottomOf="@+id/settingsVoice"
         app:layout_constraintVertical_bias="0.5" />
 
-    <TextView
+    <Button
         android:id="@+id/settingsPoint"
+        style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="196dp"
+        android:background="#F5F5F5"
         android:text="@string/point"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/settingsShare" />
 
@@ -88,16 +80,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.gms.ads.AdView
-        android:id="@+id/settingsFragmentadView"
-        android:layout_width="wrap_content"
+        android:id="@+id/settingsFragmentAd"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
         app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-5990820577037460/2539560478"
+        app:adUnitId="ca-app-pub-5990820577037460/6132555626"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

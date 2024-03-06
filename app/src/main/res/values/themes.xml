@@ -3,6 +3,7 @@
     <style name="Base.Theme.QuizApp" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/white</item>
         <item name="android:statusBarColor">@color/base</item>
+        <item name="materialSwitchStyle">@style/Widget.App.Switch</item>
         <item name="android:background">@color/base</item>
 
     </style>
@@ -18,5 +19,14 @@
     <style name="Theme.QuizApp" parent="Base.Theme.QuizApp"/>
 
 
+
+    <style name="Widget.App.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Switch</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Switch" parent="">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorSurfaceVariant">@color/green</item>
+    </style>
 
 </resources>

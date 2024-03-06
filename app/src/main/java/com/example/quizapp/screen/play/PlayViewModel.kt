@@ -1,5 +1,6 @@
 package com.example.quizapp.screen.play
 
+
 import android.app.Application
 import android.content.Context
 import android.os.CountDownTimer
@@ -8,7 +9,6 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.quizapp.data.QuestionCodable
-
 import com.google.firebase.Firebase
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -24,6 +24,7 @@ class PlayViewModel(application: Application) : AndroidViewModel(application) {
     private val questionCacheKey = "QuestionCache"
 
 
+
     private val _questions = MutableLiveData<List<QuestionCodable>?>()
     val questions: LiveData<List<QuestionCodable>?> get() = _questions
 
@@ -37,13 +38,17 @@ class PlayViewModel(application: Application) : AndroidViewModel(application) {
     val progress: LiveData<Int> get() = _progress
 
     private var countDownTimer: CountDownTimer? = null
+    private var  remainingTimeInMillis: Long = 0
+
+
 
     init {
         loadQuestionsFromCacheOrFirebase()
+        _progress.value = 20
 
     }
 
-     fun loadQuestionsFromCacheOrFirebase() {
+    fun loadQuestionsFromCacheOrFirebase() {
         val cachedQuestions = getCachedQuestions()
         if (cachedQuestions != null) {
             _questions.value = cachedQuestions
@@ -82,7 +87,7 @@ class PlayViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-     fun getCachedQuestions(): List<QuestionCodable>? {
+    fun getCachedQuestions(): List<QuestionCodable>? {
         val sharedPreferences =
             getApplication<Application>().getSharedPreferences(
                 sharedPreferencesName,
@@ -97,6 +102,7 @@ class PlayViewModel(application: Application) : AndroidViewModel(application) {
     fun startCountdownTimer() {
         countDownTimer = object : CountDownTimer(21000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
+                remainingTimeInMillis = millisUntilFinished
                 _progress.value = (millisUntilFinished / 1000).toInt()
             }
 
@@ -106,9 +112,18 @@ class PlayViewModel(application: Application) : AndroidViewModel(application) {
         }.start()
     }
 
+    fun startCounterTimer() {
+        countDownTimer?.start()
+
+    }
+
     fun cancelCountdownTimer() {
         countDownTimer?.cancel()
     }
+
+
+
+
 
     override fun onCleared() {
         super.onCleared()

@@ -8,6 +8,9 @@
     <string name="remove_ads">Reklamı Kaldır</string>
     <string name="voice">Ses</string>
     <string name="introduction_management">Giriş Yöntemi Sor</string>
+    <string name="logo_bir_bilsen">Logo Bir Bilsen</string>
+    <string name="_20">20</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
