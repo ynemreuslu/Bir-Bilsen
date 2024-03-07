@@ -10,9 +10,9 @@ android {
     signingConfigs {
         getByName("debug") {
             storePassword = "Y6154129y"
-            keyAlias = "upload"
+            keyAlias = "playcore"
             keyPassword = "Y6154129y"
-            storeFile = file("C:\\Users\\Yunus Emre Uslu\\Desktop\\keystores\\upload-keystore.jks")
+            storeFile = file("C:\\Users\\Yunus Emre Uslu\\key\\play_core\\playcore.jks")
         }
     }
     namespace = "com.example.quizapp"
