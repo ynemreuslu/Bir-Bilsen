@@ -16,5 +16,12 @@ Welcome to the Information Quiz App! This app is your fun way to test your knowl
 * **Dynamic User Interface:** Create engaging user experiences with Fragment-based navigation.
 * **Monetization:** Generate revenue through in-app advertising with Google AdMob.
 
+  ## 📱 Screen
+   
+
+https://github.com/user-attachments/assets/5694177e-c029-4fbd-adc3-4452a24df987
+
+
+
 
 
