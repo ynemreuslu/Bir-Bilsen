@@ -9,12 +9,11 @@ Welcome to the Information Quiz App! This app is your fun way to test your knowl
 - **Google Admob** :To monetize the app through ads.
 
 
-# 🚀 Features
--**Real-time quiz data from Firebase Realtime Database**
--**Modular and scalable architecture using MVVM**
--**User preferences stored locally with Shared Preferences**
--**Dynamic UI with Fragment**
--**Monetization through Google Admob**
+* **Real-time Quiz Data:** Fetch quiz data directly from Firebase Realtime Database for up-to-date content.
+* **Modular Architecture:** Employ MVVM design pattern for a clean, maintainable, and scalable codebase.
+* **Local Data Storage:** Utilize Shared Preferences for efficient storage of user preferences.
+* **Dynamic User Interface:** Create engaging user experiences with Fragment-based navigation.
+* **Monetization:** Generate revenue through in-app advertising with Google AdMob.
 
 
 
