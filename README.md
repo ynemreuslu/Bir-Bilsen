@@ -8,6 +8,7 @@ Welcome to the Information Quiz App! This app is your fun way to test your knowl
 - **Firebase Realtime Database** : For real-time data synchronization and user information.
 - **Google Admob** :To monetize the app through ads.
 
+# 🚀 Features
 
 * **Real-time Quiz Data:** Fetch quiz data directly from Firebase Realtime Database for up-to-date content.
 * **Modular Architecture:** Employ MVVM design pattern for a clean, maintainable, and scalable codebase.
