@@ -3,10 +3,18 @@ Welcome to the Information Quiz App! This app is your fun way to test your knowl
 
 # 🔧 Technologies Used
 - **MVVM** : Ensures a clean separation of concerns and a scalable architecture.
-- **Fragment**
-- **Shared Preferences**
-- **Clean Architecture**
--  **Firebase Realtime Database**
-- **Google Admob**
+- **Fragment**:For modular UI components and improved navigation
+- **Shared Preferences** : To store user settings and preferences locally.
+- **Firebase Realtime Database** : For real-time data synchronization and user information.
+- **Google Admob** :To monetize the app through ads.
+
+
+# 🚀 Features
+-**Real-time quiz data from Firebase Realtime Database**
+-**Modular and scalable architecture using MVVM**
+-**User preferences stored locally with Shared Preferences**
+-**Dynamic UI with Fragment**
+-**Monetization through Google Admob**
+
 
 
